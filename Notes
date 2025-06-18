@@ -1,0 +1,107 @@
+
+📘 Terraform Notes
+📂 Repository Structure
+bash
+Copy
+Edit
+terraform/
+├── main.tf              # Primary configuration
+├── variables.tf         # Input variables
+├── outputs.tf           # Output values
+├── providers.tf         # Provider configuration
+├── backend.tf           # Remote backend config (if used)
+└── modules/             # Custom or external modules
+🚀 Getting Started
+1. Install Terraform
+bash
+Copy
+Edit
+brew install terraform         # MacOS
+choco install terraform        # Windows
+sudo apt-get install terraform # Ubuntu
+2. Initialize the project
+bash
+Copy
+Edit
+terraform init
+3. Plan the infrastructure
+bash
+Copy
+Edit
+terraform plan
+4. Apply the changes
+bash
+Copy
+Edit
+terraform apply
+🔐 Backend Configuration (Optional)
+If you're using a remote backend (e.g., S3, Terraform Cloud):
+
+hcl
+Copy
+Edit
+# backend.tf
+terraform {
+  backend "s3" {
+    bucket         = "my-terraform-state"
+    key            = "env/dev/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+  }
+}
+🧪 Environment Setup
+Example environment file:
+
+bash
+Copy
+Edit
+# .env
+TF_VAR_region="us-east-1"
+TF_VAR_instance_type="t3.micro"
+Load environment variables:
+
+bash
+Copy
+Edit
+export $(cat .env | xargs)
+⚙️ Modules
+Custom modules are stored in modules/. You can also use public ones from the Terraform Registry.
+
+hcl
+Copy
+Edit
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+  version = "5.1.0"
+
+  name = "my-vpc"
+  cidr = "10.0.0.0/16"
+  ...
+}
+✅ Best Practices
+Use consistent naming (e.g., snake_case)
+
+Separate state by environment (dev/staging/prod)
+
+Use workspaces or directory structure for environments
+
+Lock provider versions
+
+Use terraform fmt and terraform validate
+
+Store secrets securely (e.g., not in Git)
+
+🧹 Clean Up
+bash
+Copy
+Edit
+terraform destroy
+📦 Useful Commands
+bash
+Copy
+Edit
+terraform fmt         # Format code
+terraform validate    # Validate configuration
+terraform show        # Inspect state
+terraform taint       # Force resource recreation
+terraform output      # Show output variables
