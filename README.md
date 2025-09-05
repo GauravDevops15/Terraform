@@ -41,7 +41,7 @@ Modules for reuse
 
 Great community support
 
-⚙️ Prerequisites
+### ⚙️ Prerequisites
 
 Before you begin, make sure you have:
 
@@ -75,7 +75,7 @@ terraform-zero-to-hero/
 ├── README.md
 └── .gitignore
 
-🚀 Getting Started
+### 🚀 Getting Started
 1. Clone the Repository
 git clone https://github.com/yourusername/terraform-zero-to-hero.git
 cd terraform-zero-to-hero/00-basic
@@ -91,7 +91,7 @@ terraform validate
 terraform plan
 terraform apply
 
-📘 Modules
+### 📘 Modules
 
 Modules are the foundation of scalable Terraform projects.
 This repo includes examples of:
@@ -104,7 +104,7 @@ Custom variables and outputs
 
 📁 See /01-modules/ for examples.
 
-🌍 Environments
+### 🌍 Environments
 
 Use workspaces or folder structures for environment separation.
 
