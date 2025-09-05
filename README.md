@@ -15,13 +15,13 @@ This repository is a hands-on guide for learning Terraform from scratch — cove
 
 ### 🚀 Getting Started
 
-📘 Modules
+### 📘 Modules
 
-🌍 Environments
+### 🌍 Environments
 
-🛠 Best Practices
+### 🛠 Best Practices
 
-🧪 Testing
+### 🧪 Testing
 
 📈 CI/CD Integration
 
