@@ -1,19 +1,19 @@
-📘 Terraform: Zero to Hero
+## 📘 Terraform: Zero to Hero
 
 Welcome to Terraform: Zero to Hero!
 This repository is a hands-on guide for learning Terraform from scratch — covering everything from installing Terraform to deploying production-grade infrastructure.
 
-🚀 Learn Infrastructure as Code (IaC) the right way with real-world examples!
+## 🚀 Learn Infrastructure as Code (IaC) the right way with real-world examples!
 
-🧭 Table of Contents
+### 🧭 Table of Contents
 
-📚 What is Terraform?
+### 📚 What is Terraform?
 
-⚙️ Prerequisites
+### ⚙️ Prerequisites
 
-📦 Project Structure
+### 📦 Project Structure
 
-🚀 Getting Started
+### 🚀 Getting Started
 
 📘 Modules
 
