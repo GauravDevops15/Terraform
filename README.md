@@ -58,7 +58,8 @@ Basic knowledge of CLI tools
 (Optional) AWS CLI
  if using AWS
 
-📦 Project Structure
+### 📦 Project Structure
+
 terraform-zero-to-hero/
 ├── 00-basic/
 │   ├── main.tf
@@ -115,7 +116,7 @@ terraform apply
 
 📁 See /02-environments/ for dev & prod examples.
 
-🛠 Best Practices
+### 🛠 Best Practices
 
 Use remote backends (e.g., S3 + DynamoDB for AWS)
 
@@ -127,7 +128,7 @@ Keep secrets out of code (use Vault, SSM, or environment vars)
 
 Enable state locking
 
-🧪 Testing
+### 🧪 Testing
 
 Consider tools like:
 
@@ -137,7 +138,7 @@ tflint
 
 terratest
 
-📈 CI/CD Integration
+### 📈 CI/CD Integration
 
 Add Terraform into pipelines using:
 
@@ -167,11 +168,11 @@ jobs:
       - run: terraform init
       - run: terraform plan
 
-📄 License
+### 📄 License
 
 This project is licensed under the MIT License
 .
 
-🙌 Contributing
+### 🙌 Contributing
 
 Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to change.
