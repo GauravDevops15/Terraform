@@ -23,11 +23,11 @@ This repository is a hands-on guide for learning Terraform from scratch — cove
 
 ### 🧪 Testing
 
-📈 CI/CD Integration
+### 📈 CI/CD Integration
 
-📄 License
+### 📄 License
 
-📚 What is Terraform?
+### 📚 What is Terraform?
 
 Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp that allows you to define and provision infrastructure across any cloud provider (AWS, Azure, GCP, etc.).
 
